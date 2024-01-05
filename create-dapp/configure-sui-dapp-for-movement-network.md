@@ -1,6 +1,6 @@
 # Configuring a Sui Move dApp for Movement Network
 
-In this guide for Sui developers, we'll learn how easy it is to create a Sui dApp React frontend and configure your dApp for Movement Network's M2 blockchain.
+In this guide for Sui developers, you'll learn how easy it is to create a Sui dApp React frontend and configure your dApp for Movement Network's M2 blockchain.
 
 ## Create a new Sui dApp project with `@mysten/create-dapp` 
 ```
