@@ -87,8 +87,9 @@ import {
   MAINNET_COUNTER_PACKAGE_ID,
   M2_COUNTER_PACKAGE_ID
 } from "./constants.ts";
+```
 
-In `constants.ts` you can see that no package IDs are pre-configured.
+You can see that no package IDs are pre-configured in `constants.ts`.
 
 ```
 export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
@@ -98,13 +99,13 @@ To publish your Move package to M2, navigate to the `counter` directory:
 
 `cd move/counter`
 
-Then follow [this guide](https://docs.movementlabs.xyz/developers/sui-developers/using-sui-cli) to use Sui CLI.
+Follow [this guide](https://docs.movementlabs.xyz/developers/sui-developers/using-sui-cli) to use Sui CLI.
 
-Or you can [use `movement sui`](https://docs.movementlabs.xyz/developers/movement-cli/movement-sui/client/publish).
+Or [use `movement sui`](https://docs.movementlabs.xyz/developers/movement-cli/movement-sui/client/publish).
 
-You may be prompted to add the --skip-dependency-verification` flag in your `publish` command.
+(Add the --skip-dependency-verification` flag in your `publish` command if prompted.)
 
-Once your package is published, get the ID from `Transaction Data` under `Object Changes` > `Published Objects`.
+Once the package is published, get the ID from `Transaction Data` under `Object Changes` > `Published Objects`.
 
 We'll use `0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b` here for demonstration purposes.
 
