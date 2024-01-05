@@ -10,7 +10,7 @@ pnpm create @mysten/dapp
 
 ([Install pnpm](https://pnpm.io/installation) first if needed.)
 
-When you're asked `Which starter template would you like to use?`, select `react-e2e-counter`.
+When you're prompted `Which starter template would you like to use?`, select `react-e2e-counter`.
 
 Then give your app a unique name or use the default name, `my-first-sui-dapp`.
 
