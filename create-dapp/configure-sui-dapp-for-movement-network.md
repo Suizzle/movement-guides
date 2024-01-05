@@ -103,7 +103,7 @@ Now you can set the default network to M2 in `main.tsx`!
 ```
 <SuiClientProvider networks={networkConfig} defaultNetwork="m2">
 ```
-## Using Your Counter DApp on M2
+## Using your counter dApp on M2
 To use the dApp, first configure a Sui wallet to M2. 
 
 On Sui Wallet and Ethos Wallet, you click the gear icon, then "Network", then "Custom", and paste in the M2 RPC url `https://devnet.m2.movementlabs.xyz:443`.
@@ -122,7 +122,7 @@ You (and anyone else) can increment it:
 
 And only you can reset it back to 0.
 
-## Conclusion
+## What dApps will you build on Movement?
 
 Now you know how to configure a Sui Move dApp for M2!
 
