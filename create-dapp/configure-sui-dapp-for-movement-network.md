@@ -3,14 +3,13 @@
 In this guide for Sui developers, we'll learn how easy it is to create a Sui dApp React frontend and configure your dApp for Movement Network's M2 blockchain.
 
 ## Create a new Sui dApp project with `@mysten/create-dapp` 
-
 ```
 pnpm create @mysten/dapp
 ```
 
 ([Install pnpm](https://pnpm.io/installation) first if needed.)
 
-When you're prompted `Which starter template would you like to use?`, select `react-e2e-counter`.
+When you're prompted to choose a starter template, select `react-e2e-counter`.
 
 Then give your app a unique name or use the default name, `my-first-sui-dapp`.
 
