@@ -1,4 +1,4 @@
-# Configuring a Sui dApp for Movement Network
+# Configuring a Sui Move dApp for Movement Network
 
 In this guide for Sui developers, we'll learn how easy it is to create a Sui dApp React frontend and configure your dApp for Movement Network's M2 blockchain.
 
@@ -122,6 +122,8 @@ You (and anyone else) can increment it:
 
 And only you can reset it back to 0.
 
-Be sure to check out `CreateCounter.tsx`, `Counter.tsx` and `counter.move` to understand the app's frontend and onchain logic.
+Now you know how to configure a Sui Move dApp for M2!
 
-We can't wait to see what Sui Move dApps you build and deploy to Movement Network!
+Check out `CreateCounter.tsx`, `Counter.tsx` and `counter.move` to understand the app's frontend and onchain logic. As a challenge, try modifying it to increment by 2 each time a user increments. 
+
+We can't wait to see what dApps you build and deploy to Movement Network!
