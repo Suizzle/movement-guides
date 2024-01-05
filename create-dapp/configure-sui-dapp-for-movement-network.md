@@ -107,9 +107,22 @@ Now you can set the default network to M2 in `main.tsx`!
 ## Using Your Counter DApp on M2
 To use the dApp, first configure a Sui wallet to M2. 
 
+On Sui Wallet and Ethos Wallet, you click the gear icon, then "Network", then "Custom", and paste in the M2 RPC url `https://devnet.m2.movementlabs.xyz:443`.
 
+Copy your wallet address and visit the [Movement Faucet](https://faucet.movementlabs.xyz/?network=testnet) to airdrop yourself some M2 tokens.
 
+They'll show up as "SUI" in the wallet. We are very early to Movement Network (no Token Generating Event yet) so we use the native Aptos and Sui tokens currently.
 
+Now the fun part! Connect your wallet to your dApp and create a counter!
 
+![Dapp Starter Template](./images/created-counter)
 
+You (and anyone else) can increment it:
 
+![Dapp Starter Template](./images/created-counter)
+
+And only you can reset it back to 0.
+
+Be sure to check out `CreateCounter.tsx`, `Counter.tsx` and `counter.move` to understand the app's frontend and onchain logic.
+
+We can't wait to see what Sui Move dApps you build and deploy to Movement Network!
