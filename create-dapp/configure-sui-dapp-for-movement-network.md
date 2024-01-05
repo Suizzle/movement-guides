@@ -35,7 +35,7 @@ Your dApp will appear in your browser:
 
 ![Dapp Starter Template](./images/dapp-starter-template)
 
-## Configure your Sui dApp for Movement Network (M2)
+## Configure your Sui dApp for Movement M2
 Begin by adding Movement Network's `m2` into `networkConfig.ts` with the RPC url `https://devnet.m2.movementlabs.xyz:443`:
 
 ```
