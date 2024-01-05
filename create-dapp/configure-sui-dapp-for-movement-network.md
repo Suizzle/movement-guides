@@ -33,7 +33,7 @@ npm run dev
 ```
 Your dApp will appear in your browser:
 
-![Dapp Starter Template](./images/dapp-starter-template)
+![Dapp Starter Template](./images/dapp-starter-template.png)
 
 ## Configure your Sui dApp for Movement M2
 Begin by adding Movement Network's `m2` into `networkConfig.ts` with the RPC url `https://devnet.m2.movementlabs.xyz:443`:
@@ -115,11 +115,11 @@ They'll show up as "SUI" in the wallet. We are very early to Movement Network (n
 
 Now the fun part! Connect your wallet to your dApp and create a counter!
 
-![Dapp Starter Template](./images/created-counter)
+![Dapp Starter Template](./images/created-counter.png)
 
 You (and anyone else) can increment it:
 
-![Dapp Starter Template](./images/created-counter)
+![Dapp Starter Template](./images/created-counter.png)
 
 And only you can reset it back to 0.
 
