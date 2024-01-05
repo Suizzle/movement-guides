@@ -122,6 +122,8 @@ You (and anyone else) can increment it:
 
 And only you can reset it back to 0.
 
+## Conclusion
+
 Now you know how to configure a Sui Move dApp for M2!
 
 Check out `CreateCounter.tsx`, `Counter.tsx` and `counter.move` to understand the app's frontend and onchain logic. As a challenge, try modifying it to increment by 2 each time a user increments. 
