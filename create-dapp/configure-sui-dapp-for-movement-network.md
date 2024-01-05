@@ -61,7 +61,7 @@ const { networkConfig, useNetworkVariable, useNetworkVariables } =
     },
   });
 ```
-At the top of the file, import `M2_COUNTER_PACKAGE_ID`:
+At the top of `networkConfig.ts`, import `M2_COUNTER_PACKAGE_ID`:
 ```
 import {
   DEVNET_COUNTER_PACKAGE_ID,
@@ -100,11 +100,12 @@ export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const M2_COUNTER_PACKAGE_ID = "0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b"
 ```
-Now you can set the default network to m2 in `main.tsx`!
+Now you can set the default network to M2 in `main.tsx`!
 ```
 <SuiClientProvider networks={networkConfig} defaultNetwork="m2">
 ```
-
+## Using Your Counter DApp on M2
+To use the dApp, first configure a Sui wallet to M2. 
 
 
 
