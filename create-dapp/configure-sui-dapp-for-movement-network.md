@@ -110,7 +110,7 @@ On Sui Wallet and Ethos Wallet, you click the gear icon, then "Network", then "C
 
 Copy your wallet address and visit the [Movement Faucet](https://faucet.movementlabs.xyz/?network=testnet) to airdrop yourself some M2 tokens.
 
-They'll show up as "SUI" in the wallet. We are very early to Movement Network (no Token Generation Event yet) so we use the native Aptos and Sui token names for now.
+They'll show up as "SUI" in the wallet. We are very early to Movement Network (no Token Generation Event yet) so we're using the native Aptos and Sui token symbols.
 
 Now the fun part! Connect your wallet to your dApp and create a counter!
 
