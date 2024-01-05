@@ -33,11 +33,94 @@ npm run dev
 ```
 Your dApp will appear in your browser:
 
-[todo: insert dApp screenshot]
+![Dapp Starter Template](./images/dapp-starter-template)
 
 ## Configure your Sui dApp for Movement Network (M2)
-Movement's M2 blockchain is currently the preferred target for deploying Sui Move modules.
+Begin by modifying `networkConfig.ts` where network information is defined: 
 
-We'll 
+```  
+const { networkConfig, useNetworkVariable, useNetworkVariables } =
+  createNetworkConfig({
+    devnet: {
+      url: getFullnodeUrl("devnet"),
+      variables: {
+        counterPackageId: DEVNET_COUNTER_PACKAGE_ID,
+      },
+    },
+    mainnet: {
+      url: getFullnodeUrl("mainnet"),
+      variables: {
+        counterPackageId: MAINNET_COUNTER_PACKAGE_ID,
+      },
+    },
+  });
+```
+Add Movement Network's `m2` using the RPC url `https://devnet.m2.movementlabs.xyz:443`:
+
+```
+const { networkConfig, useNetworkVariable, useNetworkVariables } =
+  createNetworkConfig({
+    devnet: {
+      url: getFullnodeUrl("devnet"),
+      variables: {
+        counterPackageId: DEVNET_COUNTER_PACKAGE_ID,
+      },
+    },
+    mainnet: {
+      url: getFullnodeUrl("mainnet"),
+      variables: {
+        counterPackageId: MAINNET_COUNTER_PACKAGE_ID,
+      },
+    },
+    m2: {
+      url: "https://devnet.m2.movementlabs.xyz:443",
+      variables: {
+        counterPackageId: M2_COUNTER_PACKAGE_ID,
+      },
+    },
+  });
+```
+At the top of the file, import `M2_COUNTER_PACKAGE_ID`:
+```
+import {
+  DEVNET_COUNTER_PACKAGE_ID,
+  MAINNET_COUNTER_PACKAGE_ID,
+  M2_COUNTER_PACKAGE_ID
+} from "./constants.ts";
+
+In `constants.ts` you can see that no package IDs are pre-configured.
+
+```
+export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
+export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
+```
+To publish your Move package to M2, navigate to the `counter` directory:
+
+`cd move/counter`
+
+Then follow [this guide](https://docs.movementlabs.xyz/developers/sui-developers/using-sui-cli) to use Sui CLI.
+
+Or you can [use `movement sui`](https://docs.movementlabs.xyz/developers/movement-cli/movement-sui/client/publish).
+
+You may be prompted to add the --skip-dependency-verification` flag in your `publish` command.
+
+Once your package is published, get the ID from `Transaction Data` under `Object Changes` > `Published Objects`.
+
+We'll use `0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b` here for demonstration purposes.
+
+In `constants.ts` export `M2_COUNTER_PACKAGE_ID`:
+
+```
+export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
+export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
+export const M2_COUNTER_PACKAGE_ID = "0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b"
+```
+
+
+
+
+
+
+
 
 
