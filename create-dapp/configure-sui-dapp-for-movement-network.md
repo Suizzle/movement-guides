@@ -119,7 +119,7 @@ Now the fun part! Connect your wallet to your dApp and create a counter!
 
 You (and anyone else) can increment it:
 
-![Dapp Starter Template](./images/created-counter.png)
+![Dapp Starter Template](./images/incremented-counter.png)
 
 And only you can reset it back to 0.
 
