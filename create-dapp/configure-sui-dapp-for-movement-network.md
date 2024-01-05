@@ -36,26 +36,7 @@ Your dApp will appear in your browser:
 ![Dapp Starter Template](./images/dapp-starter-template)
 
 ## Configure your Sui dApp for Movement Network (M2)
-Begin by modifying `networkConfig.ts` where network information is defined: 
-
-```  
-const { networkConfig, useNetworkVariable, useNetworkVariables } =
-  createNetworkConfig({
-    devnet: {
-      url: getFullnodeUrl("devnet"),
-      variables: {
-        counterPackageId: DEVNET_COUNTER_PACKAGE_ID,
-      },
-    },
-    mainnet: {
-      url: getFullnodeUrl("mainnet"),
-      variables: {
-        counterPackageId: MAINNET_COUNTER_PACKAGE_ID,
-      },
-    },
-  });
-```
-Add Movement Network's `m2` using the RPC url `https://devnet.m2.movementlabs.xyz:443`:
+Begin by adding Movement Network's `m2` into `networkConfig.ts` with the RPC url `https://devnet.m2.movementlabs.xyz:443`:
 
 ```
 const { networkConfig, useNetworkVariable, useNetworkVariables } =
@@ -95,7 +76,10 @@ You can see that no package IDs are pre-configured in `constants.ts`.
 export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
 ```
-To publish your Move package to M2, navigate to the `counter` directory:
+
+To get a package ID, publish the `counter` package to M2. 
+
+Navigate to the `counter` directory:
 
 `cd move/counter`
 
@@ -103,7 +87,7 @@ Follow [this guide](https://docs.movementlabs.xyz/developers/sui-developers/usin
 
 Or [use `movement sui`](https://docs.movementlabs.xyz/developers/movement-cli/movement-sui/client/publish).
 
-(Add the --skip-dependency-verification` flag in your `publish` command if prompted.)
+(Add the `--skip-dependency-verification` flag in your `publish` command if prompted.)
 
 Once the package is published, get the ID from `Transaction Data` under `Object Changes` > `Published Objects`.
 
@@ -116,7 +100,10 @@ export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const M2_COUNTER_PACKAGE_ID = "0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b"
 ```
-
+Now you can set the default network to m2 in `main.tsx`!
+```
+<SuiClientProvider networks={networkConfig} defaultNetwork="m2">
+```
 
 
 
