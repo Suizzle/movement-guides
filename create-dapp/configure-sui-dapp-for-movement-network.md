@@ -88,16 +88,14 @@ Or [use `movement sui`](https://docs.movementlabs.xyz/developers/movement-cli/mo
 
 (Add the `--skip-dependency-verification` flag in your `publish` command if prompted.)
 
-Once the package is published, get the ID from `Transaction Data` under `Object Changes` > `Published Objects`.
-
-We'll use `0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b` here for demonstration purposes.
+Once the package is published, get its ID from `Transaction Data` under `Object Changes` > `Published Objects`.
 
 In `constants.ts` export `M2_COUNTER_PACKAGE_ID`:
 
 ```
 export const DEVNET_COUNTER_PACKAGE_ID = "0xTODO";
 export const MAINNET_COUNTER_PACKAGE_ID = "0xTODO";
-export const M2_COUNTER_PACKAGE_ID = "0x76f85cd75c8e7ebac57382ea08a5c90eb2bf3128e4be68710bab67c9834fd35b"
+export const M2_COUNTER_PACKAGE_ID = <your counter package ID>;
 ```
 Now you can set the default network to M2 in `main.tsx`!
 ```
